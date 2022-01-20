@@ -13,7 +13,7 @@ export default function HomeScreen() {
     const fecthData = async () => {
       try {
         setLoading(true);
-        const { data } = await axios.get("/api/products");
+        // const { data } = await axios.get("/api/products");
         setLoading(false);
         setProducts(data);
       } catch (err) {
