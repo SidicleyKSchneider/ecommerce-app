@@ -6,7 +6,6 @@ import {
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
 } from "../constants/productConstants";
-import store from "../store";
 
 export const productListReducer = (
   state = { loading: true, products: [] },

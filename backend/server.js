@@ -8,7 +8,7 @@ app.get("/api/products/:id", (req, res) => {
   if (product) {
     res.send(product);
   } else {
-    res.status(404).send({ message: "Product not Found" });
+    res.status(4043).send({ message: "Product not Found" });
   }
 });
 
