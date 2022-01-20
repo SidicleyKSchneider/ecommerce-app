@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import Rating from "../components/Rating";
-import axios from "axios";
+import data from '../data';
+// import axios from "axios";
 
 export default function ProductScreen(props) {
   const params = useParams();
   const { id } = params;
   const [product, setProduct] = useState([id]); //lista produtos do backend
-        const { data } = axios.get(`/api/products/${product}`);
 
   if (!product) {
     return <div> Product Not Found </div>;
