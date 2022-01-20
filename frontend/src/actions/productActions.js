@@ -1,4 +1,4 @@
-import { Axios } from "axios";
+import  Axios from "axios";
 import {
   PRODUCT_LIST_FAIL,
   PRODUCT_LIST_REQUEST,
