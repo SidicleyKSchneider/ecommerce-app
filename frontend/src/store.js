@@ -6,7 +6,6 @@ const initialState = {};
 const reducer = combineReducers({
   productList: productListReducer,
 });
-
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   reducer,
@@ -15,3 +14,4 @@ const store = createStore(
 );
 
 export default store;
+  
